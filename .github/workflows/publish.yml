@@ -42,5 +42,5 @@ jobs:
 
       - name: Print debug information
         run: |
-          echo "META TAGS: ${{ steps.meta.outputs.tag }}"
+          echo "META TAGS: ${{ steps.meta.outputs.tags }}"
           echo "META LABELS: ${{ steps.meta.outputs.labels }}"
