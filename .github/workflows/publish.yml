@@ -39,3 +39,8 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+
+      - name: Print debug information
+        run: |
+          echo "META TAGS: ${{ steps.meta.outputs.tag }}"
+          echo "META LABELS: ${{ steps.meta.outputs.labels }}"
